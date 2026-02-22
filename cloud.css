@@ -1,0 +1,374 @@
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+    margin: 0 auto;
+    padding: 1.5rem 5%;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--primary-orange);
+}
+
+.back-link i {
+    font-size: 0.9rem;
+}
+
+/* ===== COURSE HERO ===== */
+.course-category {
+    display: inline-block;
+    color: #FFEDD4;
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.course-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+    .course-meta {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255,255,255,0.95);
+    font-size: 0.95rem;
+}
+
+.meta-item i {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.1rem;
+    width: 20px;
+}
+
+.meta-label {
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+#meta-value-1 {
+    font-weight: 600;
+}
+
+.difficulty-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-light);
+    color: var(--accent-blue);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.difficulty-badge:hover {
+    transform: translateY(-2px);
+}
+
+.course-image {
+    position: relative;
+}
+
+.course-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); 
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .course-image img {
+        height: 220px;
+    }
+}
+
+.course-image:hover img {
+    transform: scale(1.02);
+}
+
+/* ===== Article ===== */
+article {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto 80px;
+    gap: 40px;
+}
+
+@media (max-width: 1024px) {
+    article {
+        flex-direction: column;
+        padding: 40px 5%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+.section-1 {
+    flex: 1;
+    min-width: 0;
+}
+
+.section-1_child {
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .section-1_child {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-1_child {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.courses {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .courses {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.courses-set-1 div, .courses-set-2 div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.courses-set-1 i, .courses-set-2 i {
+    width: 20px;
+}
+
+.course-descrip, .instructor-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-1_child > p {
+    margin-bottom: 20px;
+}
+
+.course-descrip-paragraph {
+    font-weight: 100;
+    line-height: 1.7; 
+}
+
+.about-instructor {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 480px) {
+    .about-instructor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.about-instructor span {
+    background: linear-gradient(#FC7803, #F85E01);
+    display: inline-flex;          
+    align-items: center;           
+    justify-content: center;       
+    color: white;
+    width: 60px;                  
+    height: 60px;                  
+    border-radius: 100%;            
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.instructor-info h4 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.instructor-info p {
+    font-weight: 300;
+    line-height: 1.6; 
+}
+
+/* ===== Form Styles ===== */
+form {
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 35px;
+    width: 400px;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+@media (max-width: 1024px) {
+    form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        position: static;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 25px;
+    }
+}
+
+.form-enroll {
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+@media (max-width: 480px) {
+    .form-enroll {
+        font-size: 20px;
+    }
+}
+
+.form-join {
+    font-size: 14px;
+    display: block;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.form-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+}
+
+@media (max-width: 480px) {
+    .form-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+.btn-1 {
+    border: none;
+    color: white;
+    background-color: var(--primary-orange);
+}
+
+.btn-1:hover {
+    background-color: var(--primary-orange-hover);
+    transform: translateY(-2px);
+}
+
+.btn-2 {
+    border: 1.5px solid var(--primary-orange);
+    background-color: white;
+    color: var(--primary-orange);
+}
+
+.btn-2:hover {
+    background-color: #fff0e6;
+    transform: translateY(-2px);
+}
+
+form hr {
+    opacity: 0.4;
+    margin: 25px 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+form h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+form > div {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4a4a4a;
+    font-size: 14px;
+}
+
+form > div i {
+    width: 18px;
+    font-size: 14px;
+}
+
+@media (max-width: 968px) {
+    .course-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
