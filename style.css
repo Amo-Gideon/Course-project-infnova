@@ -134,6 +134,10 @@ form .empty-2 {
     }
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 .course {
     background-color: white;
     width: 100%;
